@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -9,6 +9,9 @@ body {
 
 .navbar {
   background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 200;
 }
 
 .navbar .navbar-brand {
@@ -20,6 +23,7 @@ body {
   font-size: 14px;
   color: #adabab;
   position: relative;
+  margin: 10px 0px;
   padding: 0px;
 }
 
@@ -45,11 +49,10 @@ body {
   border: none;
   outline: none;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
 }
 
 @media only screen and (max-width: 768px) {
-
   #line-home,
   #line-about,
   #line-gallary,
@@ -58,5 +61,67 @@ body {
   }
 }
 
-/* end */
+#home {
+  background: url("../imgs/px-beach-daylight-fun-1430675-image.jpg") center no-repeat fixed;
+  background-size: cover;
+  clear: both;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #304352;
+  opacity: .9;
+  z-index: -1;
+}
+
+#home h2 {
+  font-weight: 300;
+  word-spacing: 10px;
+  letter-spacing: 10px;
+  line-height: 1.7;
+}
+
+#home p {
+  line-height: 1.9;
+  font-size: 20px;
+  color: #eceaea;
+  font-weight: 300;
+}
+
+#home p a {
+  color: #ed4e6e;
+  text-decoration: none;
+  text-transform: none;
+  font-weight: lighter;
+}
+
+#home .btn {
+  background-color: #ed4e6e;
+  color: #e2e0e0;
+  padding: 13px 40px;
+  border-radius: 5px;
+  border: none;
+}
+
+#home .btn:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  background-color: #222;
+}
 /*# sourceMappingURL=Main.css.map */

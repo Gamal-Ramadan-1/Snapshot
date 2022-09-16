@@ -1,3 +1,4 @@
+// Navbar js
 let LinkHome = document.getElementById('line-home');
 let LinkAbout = document.getElementById('line-about');
 let LinkGallary = document.getElementById('line-gallary');
