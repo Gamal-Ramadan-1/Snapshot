@@ -1,3 +1,19 @@
+// Up To Top Buttom
+
+let BtnUp = document.getElementById('up-to-top')
+window.onscroll = function () { scrollFunction() };
+function scrollFunction() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        BtnUp.style.display = "block";
+    } else {
+        BtnUp.style.display = "none";
+    }
+}
+function up() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
 // Navbar js
 let LinkHome = document.getElementById('line-home');
 let LinkAbout = document.getElementById('line-about');

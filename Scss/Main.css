@@ -5,6 +5,29 @@
 
 body {
   background-color: #eee;
+  height: 5000px;
+}
+
+#up-to-top {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  position: fixed;
+  bottom: 20px;
+  -webkit-box-shadow: 0px 0px 5px 2px gray;
+          box-shadow: 0px 0px 5px 2px gray;
+  right: 20px;
+  z-index: 200;
+  color: #ed4e6e;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
+#up-to-top:hover {
+  background-color: #ed4e6e;
+  color: white;
 }
 
 .navbar {
