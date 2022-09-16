@@ -1,0 +1,62 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+}
+
+.navbar {
+  background-color: white;
+}
+
+.navbar .navbar-brand {
+  color: #304352;
+  font-size: 27px;
+}
+
+.navbar .navbar-collapse .nav-link {
+  font-size: 14px;
+  color: #adabab;
+  position: relative;
+  padding: 0px;
+}
+
+.navbar .navbar-collapse #line-home,
+.navbar .navbar-collapse #line-about,
+.navbar .navbar-collapse #line-gallary,
+.navbar .navbar-collapse #line-contact {
+  position: absolute;
+  width: 0%;
+  height: 1.5px;
+  background-color: #304352;
+  bottom: 0px;
+  left: 0px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.navbar .navbar-collapse #line-home {
+  width: 100%;
+}
+
+.navbar .navbar-toggler {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #line-home,
+  #line-about,
+  #line-gallary,
+  #line-contact {
+    display: none;
+  }
+}
+
+/* end */
+/*# sourceMappingURL=Main.css.map */
