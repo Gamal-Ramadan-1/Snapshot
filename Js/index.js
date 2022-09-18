@@ -1,4 +1,4 @@
-// Up To Top Buttom
+// Up To Top Button
 
 let BtnUp = document.getElementById('up-to-top')
 window.onscroll = function () { scrollFunction() };
