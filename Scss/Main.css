@@ -12,7 +12,6 @@ h2 {
 
 body {
   background-color: #eee;
-  height: 5000px;
 }
 
 #up-to-top {
@@ -41,6 +40,8 @@ body {
   background-color: white;
   position: fixed;
   width: 100%;
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(36, 36, 36, 0.08);
+          box-shadow: 0px 2px 8px 0px rgba(36, 36, 36, 0.08);
   z-index: 200;
 }
 
@@ -148,6 +149,10 @@ body {
   background-color: #222;
 }
 
+#about {
+  padding-top: 100px;
+}
+
 #about .background-about {
   float: left;
   width: 75%;
@@ -155,7 +160,7 @@ body {
   height: 400px;
 }
 
-#about img {
+#about .about-img {
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -171,7 +176,7 @@ body {
 }
 
 @media only screen and (min-width: 769px) {
-  #about img {
+  #about .about-img {
     margin-top: 40px;
     margin-left: -95px;
   }
@@ -182,12 +187,13 @@ body {
     width: 100%;
     height: 450px;
   }
-  #about img {
+  #about .about-img {
     width: 70%;
     margin-left: 16%;
     border: none;
     border-radius: 20px;
     height: 370px;
+    margin-top: 20px;
   }
 }
 
@@ -196,12 +202,89 @@ body {
     width: 100%;
     height: auto;
   }
-  #about img {
+  #about .about-img {
     width: 100%;
     margin-left: 0%;
     border: none;
     border-radius: 20px;
     height: 370px;
   }
+}
+
+.swiper {
+  height: 400px;
+  margin-top: 60px;
+}
+
+.swiper .swiper-slide {
+  background-color: white;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  position: relative;
+  z-index: 1;
+}
+
+.swiper .swiper-slide .img-team-about {
+  margin: auto;
+  border-radius: 50%;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  z-index: 2;
+}
+
+.swiper .swiper-slide h4 {
+  color: #ed4e6e;
+  font-size: 20px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  font-weight: bold;
+}
+
+.swiper .swiper-slide p {
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  opacity: 0;
+}
+
+.swiper .swiper-slide:hover {
+  background-color: #304352;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.swiper .swiper-slide:hover .img-team-about {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+}
+
+.swiper .swiper-slide:hover h4 {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.swiper .swiper-slide:hover p {
+  opacity: 1;
+  color: white;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
+.swiper-pagination {
+  position: relative;
+  bottom: -10px !important;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: #222;
+  border-radius: 0px;
+  display: inline-block;
+  width: 15px;
+  height: 5px;
 }
 /*# sourceMappingURL=Main.css.map */

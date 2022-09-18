@@ -14,7 +14,7 @@ h2 {
 
 body {
     background-color: #eee;
-    height: 5000px;
+    // height: 5000px;
 }
 
 
@@ -44,6 +44,8 @@ body {
     background-color: white;
     position: fixed;
     width: 100%;
+    box-shadow: 0px 2px 8px 0px rgba(36, 36, 36, 0.08);
+    ;
     z-index: 200;
 
     .navbar-brand {
@@ -149,6 +151,8 @@ body {
 }
 
 #about {
+    padding-top: 100px;
+
     .background-about {
         float: left;
         width: 75%;
@@ -156,7 +160,7 @@ body {
         height: 400px;
     }
 
-    img {
+    .about-img {
         width: 300px;
         height: 300px;
         border-radius: 50%;
@@ -174,7 +178,7 @@ body {
 
 @media only screen and (min-width:769px) {
     #about {
-        img {
+        .about-img {
             margin-top: 40px;
             margin-left: -95px;
         }
@@ -188,12 +192,13 @@ body {
             height: 450px;
         }
 
-        img {
+        .about-img {
             width: 70%;
             margin-left: 16%;
             border: none;
             border-radius: 20px;
             height: 370px;
+            margin-top: 20px;
         }
     }
 }
@@ -205,12 +210,80 @@ body {
             height: auto;
         }
 
-        img {
+        .about-img {
             width: 100%;
             margin-left: 0%;
             border: none;
             border-radius: 20px;
             height: 370px;
         }
+    }
+}
+
+.swiper {
+    height: 400px;
+    margin-top: 60px;
+
+    .swiper-slide {
+        background-color: white;
+        transition: all .3s ease-in-out;
+        position: relative;
+        z-index: 1;
+
+        .img-team-about {
+            margin: auto;
+            border-radius: 50%;
+            transition: all .3s ease-in-out;
+            z-index: 2;
+        }
+
+        h4 {
+            color: $Red-Color;
+            font-size: 20px;
+            transition: all .3s ease-in-out;
+            font-weight: bold;
+        }
+
+        p {
+            // display: none;
+            transition: all .4s ease-in-out;
+            opacity: 0;
+        }
+    }
+
+    .swiper-slide:hover {
+        background-color: $Main-Color;
+        transition: all .3s ease-in-out;
+
+        .img-team-about {
+            transition: all .3s ease-in-out;
+            transform: translateY(-40px);
+        }
+
+        h4 {
+            transition: all .3s ease-in-out;
+            transform: translateY(-20px);
+        }
+
+        p {
+            // display: inline-block;
+            opacity: 1;
+            color: white;
+            transition: all .4s ease-in-out;
+            transform: translateY(-15px);
+        }
+    }
+}
+
+.swiper-pagination {
+    position: relative;
+    bottom: -10px !important;
+
+    .swiper-pagination-bullet {
+        background-color: #222;
+        border-radius: 0px;
+        display: inline-block;
+        width: 15px;
+        height: 5px;
     }
 }
