@@ -47,3 +47,26 @@ function up() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+// Swiper Library
+let swiper = new Swiper(".mySwiper", {
+    slidesPerGroup: 3,
+    speed:700,
+    loop:true,
+    autoplay:true,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      600: {
+        slidesPerView: 2,
+      },
+      1000: {
+        slidesPerView: 3,
+      },
+    },
+  });

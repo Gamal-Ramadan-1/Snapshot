@@ -23,7 +23,7 @@
   </div>
 <!-- Up To Top -->
 
-  <!-- Start Navbar -->
+      <!-- Start Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand text-capitalize fw-bold" href="#">snapshot</a>
@@ -40,7 +40,7 @@
                 <a class="nav-link text-uppercase" href="#about" onclick="LineAbout()">about <span id="line-about"></span></a>
               </li>
               <li class="nav-item me-4">
-                <a class="nav-link text-uppercase" href="#" onclick="LineGallary()">gallary <span id="line-gallary"></span></a>
+                <a class="nav-link text-uppercase" href="#gallery" onclick="LineGallary()">gallary <span id="line-gallary"></span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-uppercase" href="#" onclick="LineContact()">contact <span id="line-contact"></span></a>
@@ -50,7 +50,7 @@
       </nav>
       <!-- End Navbar -->
 
-      <!-- Start Slider  -->
+      <!-- Start Home  -->
       <section id="home">
         <div class="overlay"></div>
         <div class="container">
@@ -64,7 +64,7 @@
           </div>
         </div>
       </section>
-      <!-- End Slider -->
+      <!-- End Home -->
 
       <!-- Start About -->
       <section id="about">
@@ -83,8 +83,8 @@
         </div>
         <div class="container py-5">
           <div class="row">
-            <div class="col-12 text-center text-uppercase">
-              <h2>snapshot</h2>
+            <div class="col-12 text-center">
+              <h2 class="text-uppercase">snapshot</h2>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             </div>
           </div>
@@ -137,36 +137,83 @@
       </section>
       <!-- End About -->
       
-      
+      <!-- Start Gallery -->
+      <section id="gallery">
+        <div class="container">
+          <div class="row header-gallery">
+            <div class="col-12 text-center">
+              <h2 class="text-uppercase">gallery</h2>
+              <p>Nullam scelerisque, quam nec iaculis vulputate, arcu ligula sollicitudin nisl,
+                <span class="d-block">ac volutpat erat nulla a arcu.</span></p>
+            </div>
+          </div>
+          <div class="row gy-5 px-lg-5">
+            <div class="col-md-6 col-sm-12">
+              <div class="item-gallery">
+                <div class="overflow-hidden">
+                <img src="../imgs/gallery-img1.jpg">
+              </div>
+                <div class="card-gallery d-flex justify-content-start flex-wrap">
+                  <div class="text-card ms-4 my-5">
+                    <h3 class="text-uppercase">sapien <span class="d-block">arcu</span></h3>
+                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae dolore dicta magni </small>
+                  </div>
+                  <div class="btn align-self-end ms-auto mx-3 mb-3 text-capitalize"><a href="#"> read more</a></div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="item-gallery">
+                <div class="overflow-hidden">
+                <img src="../imgs/gallery-img2.jpg">
+              </div>
+                <div class="card-gallery d-flex justify-content-start flex-wrap">
+                  <div class="text-card ms-4 my-5">
+                    <h3 class="text-uppercase">ALIQUAM<span class="d-block"> ERAT</span></h3>
+                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae dolore dicta magni </small>
+                  </div>
+                  <div class="btn align-self-end ms-auto mx-3 mb-3 text-capitalize"><a href="#">details</a></div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="item-gallery">
+                <div class="overflow-hidden">
+                <img src="../imgs/gallery-img3.jpg">
+              </div>
+                <div class="card-gallery d-flex justify-content-start flex-wrap">
+                  <div class="text-card ms-4 my-5">
+                    <h3 class="text-uppercase">CRAS <span class="d-block">ANTE SEM</span></h3>
+                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae dolore dicta magni </small>
+                  </div>
+                  <div class="btn align-self-end ms-auto mx-3 mb-3 text-capitalize"><a href="#">learn more</a></div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="item-gallery">
+                <div class="overflow-hidden">
+                <img src="../imgs/gallery-img4.jpg">
+              </div>
+                <div class="card-gallery d-flex justify-content-start flex-wrap">
+                  <div class="text-card ms-4 my-5">
+                    <h3 class="text-uppercase">SED <span class="d-block">ORNARE</span></h3>
+                    <small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae dolore dicta magni </small>
+                  </div>
+                  <div class="btn align-self-end ms-auto mx-3 mb-3 text-capitalize"><a href="#">full post</a></div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Gallery -->
+
       <!-- font awesome cdn -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"></script>
 
       <!-- owl carousel cdn -->
       <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-      <script>
-      let swiper = new Swiper(".mySwiper", {
-        slidesPerGroup: 3,
-        speed:700,
-        loop:true,
-        autoplay:true,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          0: {
-            slidesPerView: 1,
-          },
-          600: {
-            slidesPerView: 2,
-          },
-          1000: {
-            slidesPerView: 3,
-          },
-        },
-      });
-      </script>
       <!-- bootstrap cdn -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
     <script src="../Js/index.js"></script>
