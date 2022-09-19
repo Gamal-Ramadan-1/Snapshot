@@ -398,4 +398,56 @@ body {
     width: 60%;
   }
 }
+
+#contact {
+  background-color: #304352;
+  padding: 150px 0px;
+}
+
+#contact .header-footer h2 {
+  color: #fff;
+}
+
+#contact .header-footer p {
+  color: #eae8e8;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+#contact input,
+#contact textarea {
+  background-color: transparent;
+  border: 1px solid white;
+  text-transform: capitalize;
+  color: white;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+#contact input:focus-visible,
+#contact textarea:focus-visible {
+  outline: none;
+  border-color: #ed4e6e;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+#contact .btn {
+  background-color: #ed4e6e;
+  font-weight: 400;
+  font-size: 20px;
+  border-color: transparent;
+}
+
+@media only screen and (min-width: 426px) {
+  #contact .btn {
+    padding: 13px 160px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  #contact .btn {
+    padding: 10px 50px;
+  }
+}
 /*# sourceMappingURL=Main.css.map */

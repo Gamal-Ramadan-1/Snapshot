@@ -227,6 +227,7 @@ body {
 .swiper {
     height: 400px;
     margin-top: 60px;
+
     .swiper-slide {
         background-color: white;
         transition: all .3s ease-in-out;
@@ -384,5 +385,64 @@ body {
 @media only screen and (max-width:768px) {
     .card-gallery {
         width: 60%;
+    }
+}
+
+
+#contact {
+    background-color: $Main-Color;
+    padding: 150px 0px;
+
+    .header-footer {
+        h2 {
+            color: #fff;
+        }
+
+        p {
+            color: rgb(234, 232, 232);
+            font-size: 20px;
+            font-weight: 200;
+        }
+
+    }
+
+    input,
+    textarea {
+        background-color: transparent;
+        border: 1px solid white;
+        text-transform: capitalize;
+        color: white;
+        transition: all .5s ease-in-out;
+
+    }
+
+    input:focus-visible,
+    textarea:focus-visible {
+        outline: none;
+        border-color: $Red-Color;
+        transition: all .5s ease-in-out;
+    }
+
+    .btn {
+        background-color: $Red-Color;
+        font-weight: 400;
+        font-size: 20px;
+        border-color: transparent;
+    }
+}
+
+@media only screen and (min-width:426px) {
+    #contact {
+        .btn {
+            padding: 13px 160px;
+        }
+    }
+}
+
+@media only screen and (max-width:426px) {
+    #contact {
+        .btn {
+            padding: 10px 50px;
+        }
     }
 }
