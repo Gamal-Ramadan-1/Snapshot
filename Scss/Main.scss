@@ -391,7 +391,7 @@ body {
 
 #contact {
     background-color: $Main-Color;
-    padding: 150px 0px;
+    padding: 120px 0px 60px 0px;
 
     .header-footer {
         h2 {
@@ -428,6 +428,13 @@ body {
         font-weight: 400;
         font-size: 20px;
         border-color: transparent;
+        transition: all .3s ease-in-out;
+
+    }
+
+    .btn:hover {
+        background-color: #222;
+        transition: all .3s ease-in-out;
     }
 }
 
@@ -443,6 +450,37 @@ body {
     #contact {
         .btn {
             padding: 10px 50px;
+        }
+    }
+}
+
+
+.copy-right {
+    padding-top: 50px;
+
+    .social-media {
+        a {
+            font-size: 20px;
+            color: white;
+            border: 1px solid white;
+            padding: 10px;
+            transition: all .4s ease-in-out;
+
+        }
+
+        a:hover {
+            background-color: white;
+            color: $Red-Color;
+            transition: all .4s ease-in-out;
+        }
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 300;
+
+        a {
+            color: $Red-Color;
         }
     }
 }

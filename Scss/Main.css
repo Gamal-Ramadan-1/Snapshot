@@ -401,7 +401,7 @@ body {
 
 #contact {
   background-color: #304352;
-  padding: 150px 0px;
+  padding: 120px 0px 60px 0px;
 }
 
 #contact .header-footer h2 {
@@ -437,6 +437,14 @@ body {
   font-weight: 400;
   font-size: 20px;
   border-color: transparent;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#contact .btn:hover {
+  background-color: #222;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 @media only screen and (min-width: 426px) {
@@ -449,5 +457,34 @@ body {
   #contact .btn {
     padding: 10px 50px;
   }
+}
+
+.copy-right {
+  padding-top: 50px;
+}
+
+.copy-right .social-media a {
+  font-size: 20px;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.copy-right .social-media a:hover {
+  background-color: white;
+  color: #ed4e6e;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.copy-right p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.copy-right p a {
+  color: #ed4e6e;
 }
 /*# sourceMappingURL=Main.css.map */
